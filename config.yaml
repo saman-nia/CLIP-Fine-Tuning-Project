@@ -1,0 +1,39 @@
+train:
+  # model arch and pretrain 
+  model_arch: "RN50"
+  pretrained_dataset: "cc12m"
+
+  # local dataset folder
+  data_folder: "./data"
+  images_subfolder: "images"
+  descriptions_filename: "descriptions.json"
+
+  # params
+  batch_size: 16
+  num_epochs: 8
+  max_learning_rate: 0.0001
+
+  model_output_folder: "./models"
+
+  # in the case if we use AWS real S3 usage
+  # s3_data_bucket: "s3-bucket-for-data"
+  # s3_models_bucket: "s3-bucket-for-models"
+  # s3_data_prefix: "monthly-image-data/"
+  # s3_models_prefix: "monthly-clip-models/"
+  # use_s3_for_data: false
+  # upload_to_s3: false
+
+  # monitoring and logging config
+  monitoring:
+    log_level: "INFO"
+
+    # mlflow
+    mlflow_enable: false
+    mlflow_tracking_uri: "http://localhost:5000"
+    mlflow_experiment_name: "clip-finetune"
+
+  # notifications
+  notifications:
+    enable: false
+    # ntype: "email" # this could be "slack" too
+    # email_recipients: "saman.p.nia@gmail.com"

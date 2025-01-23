@@ -1,0 +1,1 @@
+"""CLIP Fine-Tuning Pipeline"""
