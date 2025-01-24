@@ -1,4 +1,4 @@
-# PlanRadar CLIP Fine-Tuning Project
+# CLIP Fine-Tuning Project
 
 I created this project to fine-tune a CLIP-like model on a custom image-text dataset. The goal is to run it monthly to keep up with new data. The project uses **Hatch** for environment management and **Docker Compose** for containerization.
 
@@ -15,7 +15,7 @@ I created this project to fine-tune a CLIP-like model on a custom image-text dat
 ## Project Structure
 
 ```
-PlanRadar_Assessment_AI_ML_Engineer
+AI_ML_Engineer
 
 ├── data/                   # Dataset folder
 │   ├── images/             # Your training images
